@@ -103,7 +103,7 @@ class Calendar extends React.Component {
     const { selectedDay } = this.state;
     const newDate = moment(selectedDay.toString().concat(this.month()).concat(this.year()));
     const event = {
-      id: 3,
+      id: selectedDay,
       text: desc,
       day: newDate,
       backColor: '#444',

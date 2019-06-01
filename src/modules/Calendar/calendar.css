@@ -29,7 +29,6 @@
   display: table-cell;
   font-size: 14px;
   text-align: center;
-  line-height: 30px;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
   background-repeat: no-repeat;
   background-position: center center;
@@ -75,7 +74,6 @@
   font-size: 12px;
   text-align: center;
   font-weight: normal;
-  line-height: 35px;
   border: 0;
   background-color: #223344;
 }
@@ -137,7 +135,6 @@
 .tail-datetime-calendar .calendar-date table.calendar-month tbody tr > * {
   width: 81.66666666666667px;
   padding: 5px;
-  line-height: 25px;
 }
 .tail-datetime-calendar .calendar-date table.calendar-month tbody tr > * span {
   display: block;
@@ -205,7 +202,6 @@
   margin: 0;
   padding: 3px 4px;
   font-size: 12px;
-  line-height: 16px;
   text-align: center;
   border-width: 1px;
   border-style: solid;
@@ -232,7 +228,6 @@
   padding: 0;
   display: block;
   font-size: 12px;
-  line-height: 12px;
 }
 
 .event-wrapper {
@@ -243,7 +238,9 @@
 }
 
 .event {
-  padding: 0 10px;
+  padding: 10px;
   border: 1px solid #444;
   color: #fff;
+  min-width: 50px;
+  margin: 10px;
 }
