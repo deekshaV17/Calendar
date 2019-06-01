@@ -1,6 +1,5 @@
 import React from "react";
 import moment from "moment";
-import { connect } from 'react-redux';
 
 import "./calendar.css";
 
@@ -12,16 +11,13 @@ class Calendar extends React.Component {
     dateObject: moment(),
     allmonths: moment.months(),
     selectedDay: null,
-    events: [],
+    events: [{
+      id: 1,
+      text: "Event 1",
+      day: moment(new Date()),
+      backColor: "#cc0000"
+    },],
   };
-
-  componentDidMount() {
-    this.setState({ events: this.props.events });
-  }
-
-  componentWillReceiveProps(props) {
-    this.setState({ events: props.events });
-  }
 
   daysInMonth = () => {
     return this.state.dateObject.daysInMonth();
@@ -170,9 +166,4 @@ class Calendar extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  events: state.events,
-  });
-
-export default connect(mapStateToProps)(Calendar);
-
+export default Calendar;
